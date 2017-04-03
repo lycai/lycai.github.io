@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Colour Space Playground</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container" id="display">
+        <div id="title">
+            Colour Space Playground
+        </div>
+        <div id="colour">
+            #aaaaaa
+        </div>
+        <div class="col">
+            <div class="space" id="rgb">
+                <div class="name">RGB</div>
+                <canvas width="256" height="256"></canvas>
+            </div>
+            <div class="space" id="cmy">
+                <div class="name">CMY</div>
+                <canvas width="256" height="256"></canvas>
+            </div>
+        </div>
+        <div class="col">
+            <div class="space" id="hsv">
+                <div class="name">HSV</div>
+                <canvas width="256" height="256"></canvas>
+            </div>
+            <div class="space" id="yuv">
+                <div class="name">YCbCr</div>
+                <canvas width="256" height="256"></canvas>
+            </div>
+        </div>
+        <div class="col" id="controls"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.3/dat.gui.js"></script>
+    <script src="js/playground.js"></script>
+</body>
+</html>
